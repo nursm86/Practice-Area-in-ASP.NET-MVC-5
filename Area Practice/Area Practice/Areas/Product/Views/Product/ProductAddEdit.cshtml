@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = null;
+    var getIndexUrl = Url.HttpRouteUrl("Product_default", new { controller = "Product", action = "Index", area ="Product"});
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Test</title>
+</head>
+<body>
+<div>
+    Hi am test
+    <a href="@getIndexUrl">Go to Index page</a>
+</div>
+</body>
+</html>
